@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    text-decoration: none;
+    font-family: Poppins;
+}
+
+:root{
+    --preto-background: rgb(14, 12, 12);
+    --branco-texto: white;
+    --branco-itens: white;
+    --cinza-escuro-itens: rgb(53, 53, 53);
+    --branco-item-hover: white;
+    --preto-fonte-item-hover: rgb(14, 12, 12);
+    --preto-fundo-texto: rgb(14, 12, 12);
+    --preto-borda-texto: rgb(26, 25, 25);
+    --preto-sombra-texto: rgb(26, 25, 25);
+    --preto-fundo-tecnologias: rgb(14, 12, 12);
+    --preto-borda-tecnologias: rgb(26, 25, 25);
+    --preto-sombra-tecnologias: rgb(26, 25, 25);
+}
+
+.light{
+        --preto-background: rgb(255, 255, 255);
+        --branco-texto: rgb(14, 12, 12);
+        --branco-itens: rgb(14, 12, 12);
+        --cinza-escuro-itens: rgb(243, 235, 235);
+        --branco-item-hover: rgb(14, 12, 12);
+        --preto-fonte-item-hover: white;
+        --preto-fundo-texto: white;
+        --preto-borda-texto: rgb(243, 235, 235);
+        --preto-sombra-texto: rgb(243, 235, 235);
+        --preto-fundo-tecnologias: white;
+        --preto-borda-tecnologias: rgb(243, 235, 235);
+        --preto-sombra-tecnologias: rgb(243, 235, 235);
+    }
+
+
+.light{
+    color-scheme: light;
+}
+
+.btn{
+    display: flex;
+    margin: auto;
+    padding: 100px;
+
+}
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    
+  }
+  
+  .switch input{ 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(173, 151, 151);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before{
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider{
+    background-color: rgb(243, 235, 235);
+  }
+  
+  input:focus + .slider{
+    box-shadow: 0 0 1px rgb(243, 235, 235);
+  }
+  
+  input:checked + .slider:before{
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  .slider.round{
+    border-radius: 34px;
+  }
+  
+  .slider.round:before{
+    border-radius: 50%;
+  }
+
+html{
+    color-scheme: light dark;
+}
+
+body{
+    background-color: var(--preto-background);
+    color: var(--branco-texto);
+    text-decoration: none;
+}
+
+a:visited{
+    color:inherit;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-around;
+}
+
+.item{
+    /*padding: 2px;
+    align-items: center;
+    margin: 10px;*/
+    transition: 0.3s;
+    color: var(--branco-itens);
+    background-color: var(--cinza-escuro-itens);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.item:hover{
+    background-color: var(--branco-item-hover);
+    color: var(--preto-fonte-item-hover);
+    transition: 0.3s;
+    scale: 1.1;
+}
+
+.apresentacao{
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar{
+    margin: auto;
+}
+
+img{
+    border-radius: 100px;
+    transition: 0.3s;
+}
+
+img:hover{
+    scale: 1.1;
+    transition: 0.3s;
+}
+
+.texto{
+    text-align: justify;
+    margin: auto;
+    padding: 15px;
+    background-color: var(--preto-fundo-texto);
+    width: 550px;
+    height: 300px;
+    border-radius: 10px;
+    border: 2px solid var(--preto-borda-texto);
+    box-shadow: 15px 15px var(--preto-sombra-texto);
+    transition: 0.3s;
+}
+
+.texto:hover{
+    scale: 1.1;
+    transition: 0.3s;
+}
+
+li{
+    font-size: large;
+    transition: 0.3s;
+}
+
+li:hover{
+    scale:1.1;
+
+}
+
+.textotecnologias{
+    text-align: justify;
+    margin: auto;
+    padding: 15px;
+    background-color: var(--preto-fundo-tecnologias);
+    width: 550px;
+    height: 350px;
+    border-radius: 10px;
+    border: 2px solid var(--preto-borda-tecnologias);
+    box-shadow: 15px 15px var(--preto-sombra-tecnologias);
+
+}
+
+
+
+
