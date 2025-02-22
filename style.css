@@ -232,27 +232,37 @@ li:hover {
 
 @media (min-width: 360px) and (max-width: 450px) {
   .texto {
-    width: 340px;
-    height: 370px;
-    font-size: 15px;
+    width: 260px;
+    height: 360px;
+    font-size: 13.5px;
   }
 
   .textotecnologias {
-    width: 350px;
+    width: 260px;
     height: 480px;
+    font-size: 15px;
   }
+
+  .titulo{
+    font-size: 14px;
+  }
+
+  li {
+    font-size: 1px;
+  }
+
 }
 
 li {
   font-size: 20px;
 }
 
-.nome{
-    font-size: 13px;
+.nome {
+  font-size: 13px;
 }
 
-.socialMedia{
-    width: 250px;
+.socialMedia {
+  width: 250px;
 }
 
 @media (min-width: 451px) and (max-width: 768px) {
