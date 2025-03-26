@@ -11,6 +11,7 @@
   --branco-itens: white;
   --cinza-escuro-itens: rgb(53, 53, 53);
   --branco-item-hover: white;
+  --branco-item-active: hsl(0, 0%, 90%);
   --preto-fonte-item-hover: rgb(14, 12, 12);
   --preto-fundo-texto: rgb(14, 12, 12);
   --preto-borda-texto: rgb(26, 25, 25);
@@ -18,6 +19,7 @@
   --preto-fundo-tecnologias: rgb(14, 12, 12);
   --preto-borda-tecnologias: rgb(26, 25, 25);
   --preto-sombra-tecnologias: rgb(26, 25, 25);
+  
 }
 
 .light {
@@ -34,7 +36,6 @@
   --preto-borda-tecnologias: rgb(243, 235, 235);
   --preto-sombra-tecnologias: rgb(243, 235, 235);
 }
-
 
 html {
   color-scheme: light dark;
@@ -93,6 +94,13 @@ a:visited {
   color: var(--preto-fonte-item-hover);
   transition: 0.3s;
   scale: 1.1;
+}
+
+.btn-link:active {
+  background-color: var(--branco-item-active);
+  color: var(--preto-fonte-item-hover);
+  transition: 0.3s;
+  scale: 1;
 }
 
 .apresentacao {
