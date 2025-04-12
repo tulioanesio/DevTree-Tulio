@@ -13,4 +13,4 @@
 ## Acesse o site
 
 O site está hosteado no Vercel.  
-🔗 [Clique aqui para acessar](https://weighted-average.vercel.app/)
+🔗 [Clique aqui para acessar](https://dev-tree-tulio.vercel.app/)
